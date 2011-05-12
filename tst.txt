@@ -1,0 +1,40 @@
+
+* GLUT
+    Synopsis: A binding for the OpenGL Utility Toolkit
+    Default available version: 2.2.2.0
+    Installed versions: 2.1.2.1
+    Homepage: http://www.haskell.org/HOpenGL/
+    License:  BSD3
+
+* OpenGL
+    Synopsis: A binding for the OpenGL graphics system
+    Default available version: 2.4.0.1
+    Installed versions: 2.2.3.0, 2.4.0.1
+    Homepage: http://www.haskell.org/HOpenGL/
+    License:  BSD3
+
+* OpenGLRaw
+    Synopsis: A raw binding for the OpenGL graphics system
+    Default available version: 1.1.0.1
+    Installed versions: 1.1.0.1
+    Homepage: http://www.haskell.org/HOpenGL/
+    License:  BSD3
+
+* QuickCheck
+    Synopsis: Automatic testing of Haskell programs
+    Default available version: 2.4.1.1
+    Installed versions: 2.4.0.1
+    Homepage: http://code.haskell.org/QuickCheck
+    License:  BSD3
+
+* base
+    Synopsis: Basic libraries (backwards-compatibility version)
+    Default available version: 3.0.3.2
+    Installed versions: (4.3.1.0)
+    License:  BSD3
+
+* bin-package-db
+    Default available version: [ Not available from any configured repository ]
+    Installed versions: 0.0.0.0
+    License:  BSD3
+
