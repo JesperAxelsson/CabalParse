@@ -81,18 +81,20 @@ ver1 = "    Installed versions: 2.2.3.0"
 ver2 = "    Installed versions: 2.2.3.0, 2.4.0.1"
 ver3 = "    Installed versions: (4.3.1.0)"
 
-block :: Parser String
-block = do skipMany (noneOf "* ")
-           readTitle
---           char '*'
+block :: Parser [String]
+block = sepBy (many (noneOf "\n\n")) blockDiv
            
---           newline
+-- Oh, it's kinda working
 block2 :: Parser [String]
-block2 = sepBy (many anyChar) (string "\n\n")
+block2 = do sepBy (many (noneOf "*")) (char '*')
+
+foo = "\nfoo is: bar\n\nwher is 12 the car"
 
 blockDiv :: Parser String
-blockDiv = do many anyChar
-              string "\n"
+--blockDiv = (string "\n\n") 
+blockDiv = do try (string "\n\n") <|> (return " ")
+
+
 
 run :: Show a => Parser a -> String -> IO()
 run p input = 
